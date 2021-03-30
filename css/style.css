@@ -1,0 +1,31 @@
+h1{
+  text-align: center;
+  font-size: 55px;
+  font-family: monospace;
+}
+/*Menyn*/
+ul{
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li{
+  display: inline-block;
+}
+
+li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 100px;
+  text-decoration: none;
+  font-family: monospace;
+}
+/*Gör att det blir en annan färg när man håller musen över länken*/
+li a:hover{
+ background-color: rgb(179, 234, 255);
+}

@@ -1,0 +1,32 @@
+.container{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px 40px auto 40px;
+}
+
+header{
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+h1{
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+nav{
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+ul{
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+section{
+  grid-column: 1/-1;
+  grid-row: 3/4;
+}
+
+footer{
+  grid-column: 1/-1;
+  grid-row: 4/5;
+}
