@@ -1,45 +1,54 @@
+/*Hur hemsidan är uppbyggd med antal rader och kolumner*/
 .container{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 140px 80px auto 100px;
 }
 
+/*Headern går från första till sista kolumnstrecket och är mellan första och andra radstrecket*/
 header{
   grid-column: 1/-1;
   grid-row: 1/2;
 }
 
+/*H1 går från första till sista kolumnstrecket och är mellan första och andra radstrecket*/
 h1{
   grid-column: 1/-1;
   grid-row: 1/2;
 }
 
+/*Naven går från första till sista kolumnstrecket och är mellan andra och tredje radstrecket*/
 nav{
   grid-column: 1/-1;
   grid-row: 2/3;
 }
 
+/*Menyn går från första till sista kolumnstrecket och är mellan andra och tredje radstrecket*/
 ul{
   grid-column: 1/-1;
   grid-row: 2/3;
 }
 
+/*Sectionen går från fjärde till tionde kolumnstrecket och är mellan tredje och fjärde radstrecket*/
 section{
   grid-column: 4/10;
   grid-row: 3/4;
 }
 
+/*Footern går från första till sista kolumnstrecket och är mellan fjärde och femte radstrecket*/
 footer{
   grid-column: 1/-1;
   grid-row: 4/5;
 }
 
+/*Gör så att sectionen går från tredje till elfte kolmunstrecket när skärmen är 900px*/
 @media only screen and (max-width: 900px){
   section{
     grid-column: 3/11;
   }
 }
 
+/*Gör så att sectionen går från första till sista kolmunstrecket när skärmen är 600px, ändrar även antalet columner från 12st till 6st*/
 @media only screen and (max-width: 600px){
   .container{
     display: grid;

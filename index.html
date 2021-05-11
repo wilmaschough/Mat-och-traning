@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang=sv>
 
+<!--head med länkar till stylesheets och viewport för att mobilanpassa-->
+
 <head>
   <meta charset="utf-8" />
   <title>Mat och Träning</title>
@@ -11,17 +13,19 @@
 </head>
 
 <body>
-
+  <!--Div som gör att sidan ser ut som jag beskrivit i grid.css-->
   <div class="container">
     <header></header>
+    <!--Rubrik-->
     <h1>Mat och träning</h1>
     <nav></nav>
+
+    <!--Meny-->
     <ul>
 
       <!-- Simulate a smartphone / tablet -->
       <div class="mobile-container">
 
-        <!-- Meny -->
         <div class="topnav">
           <a href="index.html" class="aktiv">Hem</a>
           <div id="myLinks">
@@ -37,40 +41,45 @@
       </div>
 
     </ul>
+
+    <!--sectionen börjar-->
     <section>
       <br>
       <!-- Slideshow container -->
       <div class="slideshow-container">
 
-        <!-- Bildspelet -->
+        <!-- Bildspelet, första bilden -->
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
           <img src="img/smoothie.jpg" alt="smoothie" style="width:100%">
         </div>
 
+        <!-- Bildspelet, andra bilden -->
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
           <img src="img/pudding.jpg" alt="pudding" style="width:100%">
         </div>
 
+        <!-- Bildspelet, tredje bilden -->
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
           <img src="img/matlada.jpg" alt="matlåda" style="width:100%">
         </div>
 
-        <!-- Next and previous buttons -->
+        <!-- Pilarna i bildspelet -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
       <br>
 
-      <!-- The dots/circles -->
+      <!-- prickarna under bilderna -->
       <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
 
+      <!--Första underrubriken och text-->
       <h2 id="hur">Hur hänger mat och träning ihop?</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat non urna luctus gravida sed et felis. Vestibulum malesuada auctor nibh, sed venenatis nisl sollicitudin imperdiet. Nam at dui vel elit rhoncus porta et nec neque.
         Suspendisse nisi nulla, aliquam nec posuere non, egestas nec neque. Morbi lobortis pulvinar risus, quis imperdiet tortor pretium non. Mauris aliquet elit leo, vitae porta turpis mattis bibendum. Pellentesque blandit, risus vel ultrices
@@ -86,6 +95,8 @@
 
       </p>
       <br><br>
+
+      <!--Andra underrubriken och text-->
       <h2 id="resultat">Vad kan du göra för tydligare resultat?</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum, nulla sed rutrum consectetur, mauris lacus convallis purus, eu tempor est nulla et risus. Nullam sit amet eleifend nulla, nec consectetur ex. Quisque eu lacinia quam.
         Integer eu ligula eu mauris ullamcorper pulvinar. Cras congue, erat nec luctus consectetur, odio metus eleifend nulla, ac placerat neque purus et massa. Curabitur auctor nisi a dolor hendrerit blandit. Donec id dui semper, molestie erat ac,
@@ -108,6 +119,7 @@
       </p>
     </section>
 
+    <!--footer med kontaktuppgifter-->
     <footer id="footer">
       <br>
       <p>Telefon: 1827346129
@@ -117,6 +129,7 @@
     </footer>
   </div>
 
+  <!--länk till javascriptet-->
   <script type="text/javascript" src="js/script.js">
   </script>
 </body>
