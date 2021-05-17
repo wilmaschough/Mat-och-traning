@@ -2,7 +2,7 @@
 .container{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 140px 80px auto 100px;
+  grid-auto-rows: minmax(50px, auto);
 }
 
 /*Headern går från första till sista kolumnstrecket och är mellan första och andra radstrecket*/

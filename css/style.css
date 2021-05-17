@@ -166,9 +166,3 @@ ul{
   background-color: rgb(224, 209, 255);
   color: black;
 }
-
-@media only screen and (max-width: 600px){
-  h1{
-    font-size: 40px;
-  }
-}
